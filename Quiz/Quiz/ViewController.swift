@@ -33,6 +33,9 @@ class ViewController: UIViewController {
         answerLabel.text = answer
     }
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        questionLabel.text=questions[currentQuestionIndex]
+    }
  }
 
