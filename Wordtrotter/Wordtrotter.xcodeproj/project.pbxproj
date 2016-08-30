@@ -15,7 +15,6 @@
 		6D301B871C60AE8B00664BDF /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D301B861C60AE8B00664BDF /* ConversionViewController.swift */; };
 		6D447AAB1C88C34400618E1E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D447AAA1C88C34400618E1E /* WebViewController.swift */; };
 		6D6317801C8C2FBB000F47B1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D63177E1C8C2FBB000F47B1 /* WebKit.framework */; };
-		6D6317811C8C2FBB000F47B1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D63177F1C8C2FBB000F47B1 /* WebKit.framework */; };
 		6DC55D6A1C837A5B00C1DBC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC55D691C837A5B00C1DBC3 /* MapKit.framework */; };
 		6DC55D6C1C83833D00C1DBC3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC55D6B1C83833D00C1DBC3 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 		6D301B861C60AE8B00664BDF /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		6D447AAA1C88C34400618E1E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6D63177E1C8C2FBB000F47B1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		6D63177F1C8C2FBB000F47B1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6DC55D691C837A5B00C1DBC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6DC55D6B1C83833D00C1DBC3 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,7 +40,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D6317801C8C2FBB000F47B1 /* WebKit.framework in Frameworks */,
-				6D6317811C8C2FBB000F47B1 /* WebKit.framework in Frameworks */,
 				6DC55D6A1C837A5B00C1DBC3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				6D63177E1C8C2FBB000F47B1 /* WebKit.framework */,
-				6D63177F1C8C2FBB000F47B1 /* WebKit.framework */,
 				6DC55D691C837A5B00C1DBC3 /* MapKit.framework */,
 				6D301B711C5FBB6000664BDF /* Wordtrotter */,
 				6D301B701C5FBB6000664BDF /* Products */,
