@@ -21,7 +21,7 @@ class MapViewController: UIViewController {
         segmentedControl.selectedSegmentIndex = 0
         
         segmentedControl.addTarget(self,
-                                   action: "mapTypeChanged:",
+                                   action: #selector(MapViewController.mapTypeChanged(_:)),
                                    forControlEvents: .ValueChanged)
         
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
