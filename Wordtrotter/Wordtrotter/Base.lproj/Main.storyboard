@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FMr-Y9-UkS">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Conversion View Controller-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="Wordtrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,25 +18,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoP-nZ-vgr">
-                                <rect key="frame" x="147" y="174" width="306" height="43"/>
+                                <rect key="frame" x="147" y="120" width="306" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVR-tj-Gb9">
-                                <rect key="frame" x="241" y="225" width="119" height="43"/>
+                                <rect key="frame" x="241" y="171" width="119" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQQ-M0-LLC">
-                                <rect key="frame" x="242" y="276" width="117" height="84"/>
+                                <rect key="frame" x="242" y="222" width="117" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-Nh-5ft">
-                                <rect key="frame" x="176" y="368" width="248" height="43"/>
+                                <rect key="frame" x="176" y="314" width="248" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -51,6 +51,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="fahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="QcY-tz-Nkg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="53l-vY-Ooo"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -64,7 +65,7 @@
                             <constraint firstItem="mVR-tj-Gb9" firstAttribute="top" secondItem="EoP-nZ-vgr" secondAttribute="bottom" constant="8" id="PHl-1v-SdJ"/>
                             <constraint firstItem="EQQ-M0-LLC" firstAttribute="centerX" secondItem="EoP-nZ-vgr" secondAttribute="centerX" id="U66-WK-FsS"/>
                             <constraint firstItem="n8c-Nh-5ft" firstAttribute="top" secondItem="EQQ-M0-LLC" secondAttribute="bottom" constant="8" id="WIX-do-VUe"/>
-                            <constraint firstItem="EoP-nZ-vgr" firstAttribute="top" secondItem="fFR-Bz-G1x" secondAttribute="bottom" constant="62" id="cA5-hv-Uk7"/>
+                            <constraint firstItem="EoP-nZ-vgr" firstAttribute="top" secondItem="fFR-Bz-G1x" secondAttribute="bottom" constant="8" id="cA5-hv-Uk7" userLabel="degrees Fahrenheit.top = Text Field.bottom + 8"/>
                             <constraint firstItem="fFR-Bz-G1x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="p1X-KS-FbW"/>
                             <constraint firstItem="EQQ-M0-LLC" firstAttribute="top" secondItem="mVR-tj-Gb9" secondAttribute="bottom" constant="8" id="q2w-YW-OQK"/>
                         </constraints>
@@ -72,8 +73,10 @@
                             <outletCollection property="gestureRecognizers" destination="AFq-dg-J9m" appends="YES" id="8ud-gF-ATy"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="Jgj-SQ-bS6"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="EQQ-M0-LLC" id="eKX-yp-JPt"/>
+                        <outlet property="isReally" destination="mVR-tj-Gb9" id="MmV-TJ-JOj"/>
                         <outlet property="textField" destination="fFR-Bz-G1x" id="xru-OJ-9bu"/>
                     </connections>
                 </viewController>
@@ -84,7 +87,55 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="564.5" y="535.5"/>
+            <point key="canvasLocation" x="1376" y="535"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="51G-jw-dvu">
+            <objects>
+                <viewController id="TUV-m2-V8C" customClass="MapViewController" customModule="Wordtrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="eqx-7X-mB0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfj-hc-es8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2156" y="535"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="8hN-UI-esE">
+            <objects>
+                <viewController id="zBx-6h-4a3" customClass="WebViewController" customModule="Wordtrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="5PN-w3-Bg9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    </webView>
+                    <tabBarItem key="tabBarItem" title="Web" id="CwI-pG-nme"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eti-92-1kz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855" y="548"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yEJ-8J-R7d">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FMr-Y9-UkS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="dTT-UW-Zac">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Cun-8Z-fIg"/>
+                        <segue destination="TUV-m2-V8C" kind="relationship" relationship="viewControllers" id="4Ad-eN-HSJ"/>
+                        <segue destination="zBx-6h-4a3" kind="relationship" relationship="viewControllers" id="AVX-D8-TO2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fu6-rA-q7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700" y="-320"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="49" height="33"/>
+        <image name="MapIcon" width="49" height="33"/>
+    </resources>
 </document>
