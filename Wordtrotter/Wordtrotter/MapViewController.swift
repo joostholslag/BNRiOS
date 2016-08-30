@@ -4,15 +4,19 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class MapViewController: UIViewController {
+
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var mapView: MKMapView!
+    var locationManager: CLLocationManager!
     
     override func loadView() {
         // Create a map view
         mapView = MKMapView()
-        
+        mapView.delegate = self
+        locationManager = CLLocationManager()
         // Set it as *the* view of this view controller
         view = mapView
         
