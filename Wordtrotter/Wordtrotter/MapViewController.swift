@@ -20,7 +20,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         // Set it as *the* view of this view controller
         view = mapView
         addUIElements()
-        
     }
     
     func addUIElements(){
@@ -48,7 +47,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         trailingConstraint.active = true
         
         let showLocButton = UIButton(type: .System)
-        showLocButton.setTitle("Show Loc", forState: .Normal)
+        showLocButton.setTitle("my Location", forState: .Normal)
         showLocButton.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(showLocButton)
         showLocButton.addTarget(self, action: #selector(MapViewController.showLocButton(_:)), forControlEvents: .TouchUpInside)
